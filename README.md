@@ -1,12 +1,46 @@
-# React + Vite
+# 📰 Fake News Detector
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A machine learning-powered web application that detects whether a news article or headline is **real** or **fake**. Built using a fine-tuned DistilBERT model and deployed as an interactive web interface (with plans for a Chrome extension).
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🔍 Detects fake vs real news from text input
+- 🧠 Fine-tuned NLP model (DistilBERT)
+- 🧪 Inference API using FastAPI
+- 💻 Interactive frontend for user input and prediction results
+- 🧩 Planned: Chrome Extension for real-time detection on websites
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧠 Model Overview
+
+- **Model**: `DistilBERT` (pretrained transformer)
+- **Training Framework**: Hugging Face Transformers + PyTorch
+- **Dataset**: Custom curated dataset (better than typical Fake/Real dataset)
+- **Loss**: Weighted Cross Entropy (handles class imbalance)
+- **Metrics**: Accuracy, F1 Score, Precision, Recall
+- **Inference**: Batched input prediction with softmax output
+
+---
+
+## 🧰 Tech Stack
+
+| Part         | Technology               |
+|--------------|---------------------------|
+| Model        | DistilBERT, Transformers, PyTorch |
+| Training     | Hugging Face Trainer      |
+| API Backend  | FastAPI                   |
+| Frontend     | React.js / Astro (planned)|
+| Deployment   | Render / Hugging Face Spaces (TBD) |
+| Extension    | Chrome Extension (planned)|
+
+---
+
+## 📦 Installation & Usage
+
+### 1. Clone the Repo
+```bash
+git clone https://github.com/yourusername/fake-news-detector.git
+cd fake-news-detector

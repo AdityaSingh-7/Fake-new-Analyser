@@ -44,3 +44,7 @@ A machine learning-powered web application that detects whether a news article o
 ```bash
 git clone https://github.com/yourusername/fake-news-detector.git
 cd fake-news-detector
+```
+
+
+This project is licensed under the MIT License. See the LICENSE file for details.
